@@ -3,8 +3,8 @@
     "name": "ClearURLs",
     "version": "1.21.0",
     "author": "Kevin Röbert",
-    "description": "__MSG_extension_description__",
-    "homepage_url": "https://gitlab.com/KevinRoebert/ClearUrls",
+    "description": "Removes tracking info from URLs. Forked from github.com/ClearURLs/Addon",
+    "homepage_url": "https://github.com/sir-pinecone/clear-urls-browser-extension",
     "default_locale": "en",
     "icons": {
         "16": "img/clearurls_16x16.png",

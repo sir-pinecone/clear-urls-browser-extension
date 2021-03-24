@@ -193,8 +193,8 @@ function initSettings() {
     storage.log = {"log": []};
     storage.statisticsStatus = true;
     storage.badged_color = "#ffa500";
-    storage.hashURL = "https://rules2.clearurls.xyz/rules.minify.hash";
-    storage.ruleURL = "https://rules2.clearurls.xyz/data.minify.json";
+    storage.hashURL = "https://raw.githubusercontent.com/sir-pinecone/clear-urls-browser-extension/master/data/rules.minify.hash";
+    storage.ruleURL = "https://raw.githubusercontent.com/sir-pinecone/clear-urls-browser-extension/master/data/data.minify.json";
     storage.contextMenuEnabled = true;
     storage.historyListenerEnabled = true;
     storage.localHostsSkipping = true;
@@ -221,27 +221,27 @@ function initSettings() {
 function replaceOldURLs(url) {
     switch (url) {
         case "https://raw.githubusercontent.com/KevinRoebert/ClearUrls/master/data/rules.hash?flush_cache=true":
-            return "https://kevinroebert.gitlab.io/ClearUrls/data/rules.minify.hash";
+            return "https://raw.githubusercontent.com/sir-pinecone/clear-urls-browser-extension/master/data/rules.minify.hash";
         case "https://raw.githubusercontent.com/KevinRoebert/ClearUrls/master/data/data.json?flush_cache=true":
-            return "https://kevinroebert.gitlab.io/ClearUrls/data/data.minify.json";
+            return "https://raw.githubusercontent.com/sir-pinecone/clear-urls-browser-extension/master/data/data.minify.json";
         case "https://gitlab.com/KevinRoebert/ClearUrls/raw/master/data/rules.hash":
-            return "https://kevinroebert.gitlab.io/ClearUrls/data/rules.minify.hash";
+            return "https://raw.githubusercontent.com/sir-pinecone/clear-urls-browser-extension/master/data/rules.minify.hash";
         case "https://gitlab.com/KevinRoebert/ClearUrls/raw/master/data/data.json":
-            return "https://kevinroebert.gitlab.io/ClearUrls/data/data.minify.json";
+            return "https://raw.githubusercontent.com/sir-pinecone/clear-urls-browser-extension/master/data/data.minify.json";
         case "https://gitlab.com/KevinRoebert/ClearUrls/-/jobs/artifacts/master/raw/rules.min.hash?job=hash%20rules":
-            return "https://kevinroebert.gitlab.io/ClearUrls/data/rules.minify.hash";
+            return "https://raw.githubusercontent.com/sir-pinecone/clear-urls-browser-extension/master/data/rules.minify.hash";
         case "https://gitlab.com/KevinRoebert/ClearUrls/raw/master/data/data.min.json":
-            return "https://kevinroebert.gitlab.io/ClearUrls/data/data.minify.json";
+            return "https://raw.githubusercontent.com/sir-pinecone/clear-urls-browser-extension/master/data/data.minify.json";
         case "https://gitlab.com/KevinRoebert/ClearUrls/raw/master/data/data.minify.json":
-            return "https://kevinroebert.gitlab.io/ClearUrls/data/data.minify.json";
+            return "https://raw.githubusercontent.com/sir-pinecone/clear-urls-browser-extension/master/data/data.minify.json";
         case "https://gitlab.com/KevinRoebert/ClearUrls/-/jobs/artifacts/master/raw/data.minify.json?job=hash%20rules":
-            return "https://kevinroebert.gitlab.io/ClearUrls/data/data.minify.json";
+            return "https://raw.githubusercontent.com/sir-pinecone/clear-urls-browser-extension/master/data/data.minify.json";
         case "https://gitlab.com/KevinRoebert/ClearUrls/-/jobs/artifacts/master/raw/rules.minify.hash?job=hash%20rules":
-            return "https://kevinroebert.gitlab.io/ClearUrls/data/rules.minify.hash";
-        case "https://kevinroebert.gitlab.io/ClearUrls/data/data.minify.json":
-            return "https://rules2.clearurls.xyz/data.minify.json";
-        case "https://kevinroebert.gitlab.io/ClearUrls/data/rules.minify.hash":
-            return "https://rules2.clearurls.xyz/rules.minify.hash";
+            return "https://raw.githubusercontent.com/sir-pinecone/clear-urls-browser-extension/master/data/rules.minify.hash";
+        case "https://raw.githubusercontent.com/sir-pinecone/clear-urls-browser-extension/master/data/data.minify.json":
+            return "https://raw.githubusercontent.com/sir-pinecone/clear-urls-browser-extension/master/data/data.minify.hash";
+        case "https://raw.githubusercontent.com/sir-pinecone/clear-urls-browser-extension/master/data/rules.minify.hash":
+            return "https://raw.githubusercontent.com/sir-pinecone/clear-urls-browser-extension/master/data/rules.minify.hash";
         default:
             return url;
     }
