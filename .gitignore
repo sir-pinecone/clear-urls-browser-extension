@@ -18,3 +18,5 @@ yarn-error.log*
 
 # WebStorm
 .idea/
+
+.web-extension-id
